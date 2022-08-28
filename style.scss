@@ -1,0 +1,668 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+//fonts heebo and poppins
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Poppins&display=swap');
+
+$-heebo: 'Heebo', sans-serif;
+$-poppins: 'Poppins', sans-serif;
+$-text-gray: #333333;
+
+.header {
+    width: 100%;
+
+    .nav {
+        width: 93%;
+        height: 15vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            font-family: $-heebo;
+            font-size: 1.5rem;
+            color: $-text-gray;
+            cursor: pointer;
+
+            a{
+                color: $-text-gray;
+            }
+        }
+
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            gap: 3.2em;
+
+            li a {
+                color: $-text-gray;
+                font-family: 'Poppins';
+                font-weight: bold;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.hero {
+    width: 93%;
+    margin: 50px auto;
+
+    &__top-text {
+        p {
+            font-family: $-poppins;
+            font-size: 1rem;
+            color: #2d9cdb;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-family: $-poppins;
+            font-size: 2.5rem;
+            color: $-text-gray;
+            margin: 20px 0;
+        }
+    }
+
+    &__img {
+        img {
+            width: 100%;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+    }
+
+    &__bottom-text {
+        h1 {
+            font-family: $-poppins;
+            color: $-text-gray;
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+
+        p {
+            color: #4f4f4f;
+            font-family: 'Poppins';
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 20px 0;
+        }
+    }
+
+    .align-left {
+        position: relative;
+        display: inline-block;
+        left: 200px;
+    }
+
+    &__contact {
+        position: relative;
+        display: inline-block;
+        top: 95px;
+        left: -100px;
+
+        p {
+            color: #828282;
+            font-size: 1rem;
+        }
+
+        input {
+            margin-top: 0.5em;
+            width: 340px;
+            height: 55px;
+            background: #f2f2f2;
+            border-radius: 12px;
+            border: none;
+            padding: 0 5.5em 0 1.5em;
+            font-size: 1rem;
+            font-family: $-poppins;
+            color: #4f4f4f;
+            outline: none;
+        }
+
+        .btn {
+            position: absolute;
+            width: 80px;
+            height: 49px;
+            border-radius: 12px;
+            border: none;
+            background: #2d9cdb;
+            color: #f2f2f2;
+            font-family: $-poppins;
+            font-size: 1rem;
+            top: 29.5px;
+            right: 3px;
+
+            a:visited {
+                color: #f2f2f2;
+            }
+        }
+    }
+}
+
+.services {
+    margin-top: 250px;
+    width: 100%;
+    h1 {
+        font-family: $-poppins;
+        color: $-text-gray;
+        font-size: 2.2rem;
+        margin-bottom: 70px;
+        letter-spacing: 1px;
+    }
+
+    &__title {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    &__container {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-evenly;
+
+        img {
+            width: 65px;
+            height: 65px;
+            margin: 0.7em 0;
+        }
+
+        .ui-ux,
+        .font-end,
+        .back-end {
+            width: 30%;
+            padding: 1em 2em 2em;
+
+            h2 {
+                font-family: $-poppins;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: black;
+                margin: 0.7em 0;
+            }
+
+            p {
+                font-family: $-poppins;
+                font-size: 1rem;
+                color: $-text-gray;
+                margin: 0.7em 0;
+            }
+
+            .btn {
+                margin: .7rem 0;
+                width: 100px;
+                height: 40px;
+                border-radius: 30px;
+                border: none;
+                color: #828282;
+                background: #E0E0E0;
+                font-family: $-poppins;
+                font-size: .9rem;
+
+                a {
+                    color: #828282;
+                    font-size: bold;
+                }
+            }
+        }
+
+        .transition:hover {
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(91, 91, 91, 0.1);
+            background: white;
+            transform: translateY(-10px);
+            transition-duration: .7s;
+            cursor: pointer;
+
+            .btn {
+                background: #2D9CDB;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.designs {
+    margin: 130px 0;
+    width: 100%;
+
+    &__title {
+        font-family: $-poppins;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    &__items {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+        .grid-item {
+            margin: 15px auto 130px auto;
+            img {
+                width: 480px;
+                height: 480px;
+                border-radius: 30px;
+            }
+
+            p {
+                margin-top: 1rem;
+                font-family: $-poppins;
+                font-size: .9rem;
+                color: #828282;
+            }
+
+            h2 {
+                margin-top: .3em;
+                font-family: $-poppins;
+                color: #333333;
+            }
+        }
+
+        .drop {
+            position: relative;
+            top: 150px;
+        }
+    }
+
+    .more {
+        display: inline-block;
+        position: relative;
+        left: 1035px;
+        top: -11px;
+
+        a {
+            font-family: $-poppins;
+            color: #2d9cdb;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        img {
+            position: absolute;
+            top: 7.5px;
+            right: -30px;
+        }
+    }
+}
+
+.team {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+    margin: 250px 0;
+    align-items: center;
+    gap: 3px;
+    &__intro {
+        width: 25%;
+
+        h5 {
+            font-family: $-poppins;
+            color: #EB5757;
+            font-size: 1.1rem;
+            margin-top: 1em;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #333333;
+            font-family: $-poppins;
+            font-size: 2.1rem;
+            letter-spacing: 1px;
+            margin-top: .5em;
+        }
+
+        p {
+            font-family: $-poppins;
+            color: #4F4F4F;
+            font-size: 1rem;
+            margin-top: 1em;
+        }
+    }
+
+    &__people {
+        width: 35%;
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+
+        .person-1 {
+            width: 230px;
+            height: 230px;
+            border-radius: 30px;
+            bottom: 8px;
+            left: 200px;
+        }
+
+        .person-2 {
+            width: 260px;
+            height: 255px;
+            border-radius: 30px;
+            left: 200px;
+        }
+
+        .person-3 {
+            width: 280px;
+            height: 270px;
+            border-radius: 30px;
+            left: -90px;
+            top: -140px;
+        }
+    }
+}
+.testimony{
+    width: 100%;
+    .container{
+        width: 75%;
+        margin-left: 12.5%;
+        h1{
+            font-family: $-poppins;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin: 1.5em 0;
+        }
+        .profile{
+            img{
+                width: 80px;
+                border-radius: 12px;
+            }
+            h5{
+                font-family: $-poppins;
+                font-size: 1rem;
+                color: #333333;
+            }
+            p{
+                font-family: $-poppins;
+                color:  #828282;
+            }
+            .align{
+                position: relative;
+                left: 95px;
+                bottom: 65px;
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    background: #100E1D;
+    padding: 50px 0;
+    .flex-container{
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: flex-start;
+        .menu{
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            ul li a{
+                font-family: $-poppins;
+                font-size: 1rem;
+                color: white;
+
+            }
+        }
+        .social{
+            .logo{
+                h2{
+                    font-family: $-poppins;
+                    font-size: 2rem;
+                    a{
+                        color: white;
+                    }
+                }
+                .social__icons{
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .contact{
+            position: relative;
+            p{
+                color: #828282;
+                font-size: 1rem;
+
+            }
+            input {
+                margin-top: 0.5em;
+                width: 340px;
+                height: 55px;
+                background: #f2f2f2;
+                border-radius: 12px;
+                border: none;
+                padding: 0 5.5em 0 1.5em;
+                font-size: 1rem;
+                font-family: $-poppins;
+                color: #4f4f4f;
+                outline: none;
+            }
+    
+            .btn {
+                position: absolute;
+                width: 75px;
+                height: 49px;
+                border-radius: 12px;
+                border: none;
+                background: #2d9cdb;
+                color: #f2f2f2;
+                font-family: $-poppins;
+                font-size: 1rem;
+                top:28px;
+                right: 3.1px;
+                a:visited {
+                    color: #f2f2f2;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        .nav {
+            &__logo {
+                font-size: 1rem;
+            }
+
+            &__items {
+                li a {
+                    display: none;
+                }
+            }
+        }
+
+        .hero {
+            margin: 25px auto;
+
+            &__top-text {
+                p {
+                    font-size: 0.7rem;
+                }
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .align-left {
+                left: 30px;
+            }
+
+            &__img {
+                img {
+                    height: 125px;
+                }
+            }
+
+            &__bottom-text {
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+            &__contact{
+                left: 30px;
+                top: 10px;
+                input{
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .services{
+        margin-top: 130px;
+        &__title{
+            width: 80%;
+            h1{
+                font-size: 1.8rem;
+            }
+        }
+        &__container{
+            flex-direction: column;
+            gap: 15px;
+            .ui,.front-end,.back-end{
+                width: 33%;
+            }
+        }
+        .box{
+            width: 100%;
+            h2{
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .designs{
+        &__title{
+            width: 80%;
+        }
+        &__items{
+            width: 95%;
+        }
+        .grid-container{
+            display: flex;
+            flex-direction: column;
+            margin: -135px auto -600px auto;
+            gap: 20px;
+            .grid-item{
+                margin-top: 0;
+                img{
+                    width: 100%;
+                    height: 410px;
+                    margin-top: 30px;
+                }
+                p{
+                    margin: .3em 0;
+                    font-size: .9rem;
+                }
+                h2{
+                    margin: .1em 0;
+                    font-size: 1.5rem;
+                }
+                .drop{
+                    top: -150px
+                }
+            }
+            .mobile{
+                position: relative;
+                top: -150px;
+            }
+            .front-end{
+                position: relative;
+                top: -290px;
+            }
+        }
+        .more{
+            left: 10px;
+            top: 200px;
+        }
+    }
+    .team{
+        margin-bottom: 200px;
+        flex-direction: column;
+        &__intro{
+            width: 80%;
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+        &__people{
+            width: 80%;
+            top: 190px;
+            .person-1{
+                width: 40%;
+                left: 190px;
+            }
+            .person-2{
+                width: 175px;
+                height: 175px;
+                left: 190px;
+            }
+            .person-3{
+                width: 210px;
+                height: 210px;
+                top: -100px;
+                left: -30px;
+            }
+        }
+    }
+    .testimony{
+        margin: 400px 0 0 0;
+        width: 100%;
+        .container{
+            width: 85%;
+            margin-left: 13px;
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    footer{
+        display: inline-block;
+        height: 80vh;
+        .flex-container{
+            flex-direction: column;
+            gap: 30px;
+            margin-left: 30px;
+        }
+        .contact{
+            input{
+                width: 250px;
+            }
+        }
+    }
+}
