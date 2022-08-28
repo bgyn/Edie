@@ -148,13 +148,13 @@
   margin: 0.7em 0;
 }
 .services__container .ui-ux,
-.services__container .font-end,
+.services__container .front-end,
 .services__container .back-end {
   width: 30%;
   padding: 1em 2em 2em;
 }
 .services__container .ui-ux h2,
-.services__container .font-end h2,
+.services__container .front-end h2,
 .services__container .back-end h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
@@ -163,7 +163,7 @@
   margin: 0.7em 0;
 }
 .services__container .ui-ux p,
-.services__container .font-end p,
+.services__container .front-end p,
 .services__container .back-end p {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -171,7 +171,7 @@
   margin: 0.7em 0;
 }
 .services__container .ui-ux .btn,
-.services__container .font-end .btn,
+.services__container .front-end .btn,
 .services__container .back-end .btn {
   margin: 0.7rem 0;
   width: 100px;
@@ -184,7 +184,7 @@
   font-size: 0.9rem;
 }
 .services__container .ui-ux .btn a,
-.services__container .font-end .btn a,
+.services__container .front-end .btn a,
 .services__container .back-end .btn a {
   color: #828282;
   font-size: bold;
@@ -475,8 +475,9 @@ footer .flex-container .contact .btn a:visited {
     flex-direction: column;
     gap: 15px;
   }
-  .services__container .ui, .services__container .front-end, .services__container .back-end {
-    width: 33%;
+  .services__container .ui-ux, .services__container .front-end, .services__container .back-end {
+    width: 40%;
+    padding: 0 1em 0 0;
   }
   .services .box {
     width: 100%;

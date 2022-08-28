@@ -178,7 +178,7 @@ $-text-gray: #333333;
         }
 
         .ui-ux,
-        .font-end,
+        .front-end,
         .back-end {
             width: 30%;
             padding: 1em 2em 2em;
@@ -551,8 +551,9 @@ footer{
         &__container{
             flex-direction: column;
             gap: 15px;
-            .ui,.front-end,.back-end{
-                width: 33%;
+            .ui-ux,.front-end,.back-end{
+                width: 40%;
+                padding: 0 1em 0 0;
             }
         }
         .box{
