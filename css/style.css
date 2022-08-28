@@ -219,15 +219,17 @@
 }
 .designs .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   justify-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .designs .grid-container .grid-item {
-  margin: 15px auto 130px auto;
+  width: 100%;
+  margin: 1em auto 8.1em auto;
 }
 .designs .grid-container .grid-item img {
-  width: 480px;
-  height: 480px;
+  width: 100%;
   border-radius: 30px;
 }
 .designs .grid-container .grid-item p {
@@ -425,7 +427,7 @@ footer .flex-container .contact .btn a:visited {
   color: #f2f2f2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   .header .nav__logo {
     font-size: 1rem;
   }
@@ -486,6 +488,9 @@ footer .flex-container .contact .btn a:visited {
   .services .box p {
     font-size: 1.1rem;
   }
+  .designs {
+    margin-bottom: -40em;
+  }
   .designs__title {
     width: 80%;
   }
@@ -495,16 +500,16 @@ footer .flex-container .contact .btn a:visited {
   .designs .grid-container {
     display: flex;
     flex-direction: column;
-    margin: -135px auto -600px auto;
-    gap: 20px;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    gap: 5vh;
   }
   .designs .grid-container .grid-item {
-    margin-top: 0;
+    width: 95%;
   }
   .designs .grid-container .grid-item img {
     width: 100%;
-    height: 410px;
-    margin-top: 30px;
   }
   .designs .grid-container .grid-item p {
     margin: 0.3em 0;
@@ -527,9 +532,10 @@ footer .flex-container .contact .btn a:visited {
   }
   .designs .more {
     left: 10px;
-    top: 200px;
+    top: -390px;
   }
   .team {
+    width: 100%;
     margin-bottom: 200px;
     flex-direction: column;
   }
@@ -540,23 +546,29 @@ footer .flex-container .contact .btn a:visited {
     font-size: 1.5rem;
   }
   .team__people {
-    width: 80%;
+    width: 100%;
     top: 190px;
+    display: flex;
+    justify-content: center;
   }
   .team__people .person-1 {
-    width: 40%;
-    left: 190px;
+    min-width: 80px;
+    width: 35vw;
+    height: auto;
+    left: 210px;
   }
   .team__people .person-2 {
-    width: 175px;
-    height: 175px;
-    left: 190px;
+    min-width: 85px;
+    width: 40vw;
+    height: auto;
+    left: 210px;
   }
   .team__people .person-3 {
-    width: 210px;
-    height: 210px;
-    top: -100px;
-    left: -30px;
+    min-width: 100px;
+    width: 50vw;
+    height: auto;
+    top: -80px;
+    left: 10px;
   }
   .testimony {
     margin: 400px 0 0 0;
