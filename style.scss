@@ -5,7 +5,9 @@
     text-decoration: none;
     list-style: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 //fonts heebo and poppins
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Poppins&display=swap');
 
@@ -29,7 +31,6 @@ $-text-gray: #333333;
             font-size: 1.5rem;
             color: $-text-gray;
             cursor: pointer;
-
             a{
                 color: $-text-gray;
             }
@@ -500,7 +501,7 @@ footer{
         }
 
         .hero {
-            margin: 25px auto;
+            margin: 25px;
 
             &__top-text {
                 p {
@@ -553,7 +554,6 @@ footer{
             gap: 15px;
             .ui-ux,.front-end,.back-end{
                 width: 40%;
-                padding: 0 1em 0 0;
             }
         }
         .box{
@@ -643,7 +643,7 @@ footer{
             }
             .person-3{
                 min-width: 100px;
-                width: 50vw;
+                width: 45vw;
                 height: auto;
                 top: -80px;
                 left: 10px;
@@ -671,8 +671,11 @@ footer{
         }
         .contact{
             input{
-                width: 250px;
+                width: 20%;
             }
         }
+    }
+    body{
+        overflow-x: hidden;
     }
 }

@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   width: 100%;
 }
@@ -435,7 +439,7 @@ footer .flex-container .contact .btn a:visited {
     display: none;
   }
   .header .hero {
-    margin: 25px auto;
+    margin: 25px;
   }
   .header .hero__top-text p {
     font-size: 0.7rem;
@@ -477,7 +481,6 @@ footer .flex-container .contact .btn a:visited {
   }
   .services__container .ui-ux, .services__container .front-end, .services__container .back-end {
     width: 40%;
-    padding: 0 1em 0 0;
   }
   .services .box {
     width: 100%;
@@ -566,7 +569,7 @@ footer .flex-container .contact .btn a:visited {
   }
   .team__people .person-3 {
     min-width: 100px;
-    width: 50vw;
+    width: 45vw;
     height: auto;
     top: -80px;
     left: 10px;
@@ -592,6 +595,9 @@ footer .flex-container .contact .btn a:visited {
     margin-left: 30px;
   }
   footer .contact input {
-    width: 250px;
+    width: 20%;
+  }
+  body {
+    overflow-x: hidden;
   }
 }/*# sourceMappingURL=style.css.map */
