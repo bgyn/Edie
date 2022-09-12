@@ -597,7 +597,7 @@ footer .flex-container .contact .btn a:visited {
   footer .contact input {
     width: 20%;
   }
-  html {
+  body {
     overflow-x: hidden;
   }
 }/*# sourceMappingURL=style.css.map */
